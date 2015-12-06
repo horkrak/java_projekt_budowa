@@ -1,5 +1,7 @@
 
 public interface KopaczRowowInterface {
 	
-	void kopRow();
+	String kopRow();
+	
+	void uaktualnij(String string);
 }

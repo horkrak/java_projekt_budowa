@@ -1,9 +1,18 @@
 
-public class Koparka implements KopaczRowowInterface{
+public class Koparka implements KopaczRowowInterface, Obserwator{
 
 	@Override
-	public void kopRow() {
-		System.out.println("Kopie szybko ale gloœno!!! - koparka");
+    public String kopRow() {
+        return "Kopie szybko ale g³oœno!!!";
+    }
+
+    @Override
+    public String toString() {
+        return " Jestem kooopaara!";
+    }
+	
+	public void uaktualnij(String string) {
+		System.out.println("Podgl¹dacz 2:  " + string );
 	}
 
 }
